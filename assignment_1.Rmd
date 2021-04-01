@@ -1,0 +1,54 @@
+---
+title: "Assignment 1"
+author: "Allison Bailey"
+date: "3/31/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+README.md: this file
+
+spring_2021/: This folder contains coursework for Spring 2021 at Bren.
+  - esm_261/ 
+    - assignments/
+     - assignment_1/
+      - assignment_1.rmd
+      - assignment_1.rproj
+    - readings/
+  - esm_xxx/
+    - assignments/
+    - big_bang_competition/
+      - 2021-03-25_final-rubbish-video.mp4
+      - 2021-03-27_rubbish-executive-summary.docx
+    - readings/
+  - esm_xxx/
+    - assignments/
+     - labs/
+      - 01_lab.docx
+      - 02_lab.docx
+    - readings/
+      - 
+      - esm_xxx/
+    - assignments/
+    - readings/
+      - 
+
+n/: data for assignment # n
+
+examples/: data files for in-class exercises, tutorials, etc.
+
+events/: event (lecture, tutorial, “office hours”, etc.) resources
+
+yyyy-mm-dd/: resources for date yyyy-mm-dd
+
+ESM263_yyyy-mm-dd_Zoom_content: Zoom content, where content is:
+
+chat.txt: chat transcript
+README.md: misc. notes
+video.mp4 or video.mov: video recording
+mirror/: copies of large software and/or data packages that might take too long to download from “official” servers.
+Windows/: Windows software
+macOS/: Mac software
