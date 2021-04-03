@@ -9,46 +9,59 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-README.md: this file
+# Data Management of Fall Quarter 2020 UCSB - Bren Courses
+This database contains all readings, syllabi, assignments and subsequent files for those assignments for each course taken Fall Quarter 2020. 
 
-spring_2021/: This folder contains coursework for Spring 2021 at Bren.
-  - esm_261/ 
-    - assignments/
-     - assignment_1/
-      - assignment_1.rmd
-      - assignment_1.rproj
-    - readings/
-  - esm_xxx/
-    - assignments/
-    - big_bang_competition/
-      - 2021-03-25_final-rubbish-video.mp4
-      - 2021-03-27_rubbish-executive-summary.docx
-    - readings/
-  - esm_xxx/
-    - assignments/
-     - labs/
-      - 01_lab.docx
-      - 02_lab.docx
-    - readings/
-      - 
-      - esm_xxx/
-    - assignments/
-    - readings/
-      - 
+### Typographic Conventions
 
-n/: data for assignment # n
+* ```literal```: fixed parts of file or folder names
+* *variable*: variable parts of file or folder names
+  + *yyyy-mm-dd*: a calendar date in ISO 8601 format
 
-examples/: data files for in-class exercises, tutorials, etc.
+### Structure and Naming Conventions
+* ```README.md```: this file
+* ```fall_2020/```: This folder contains coursework for Fall 2020 at Bren.
+  + *esm_xxx*/: Files related to a specific course within Bren
+    + ```readings/```: Reading required for the course
+      + *date_author_abr-title.pdf*: readable pdf file 
+    + ```labs/```: Weekly labs for the course
+      + *lab-1*/: Specific lab number.
+        + ```working_document/```: Working lab document
+          + *date_lab-number.docx*: Readable microsoft word document
+        + ```data/```: Data for a specific lab
+          + *date_lab-number_description.csv*: data calculated from lab in csv format
+          +  *date_lab-number_description.rmd*: R Markdown document associated with lab
+          +  *date_lab-number_description.rproj*: R Project associated with lab
+    + ```assignments/```: Assignments required for each course
+      + *assignment_1*/: Specific assignment number.
+        + ```sources/```:
+          +  *date_author-abr-title.pdf*: readable pdf file
+        + ```data/```: Data for a specific assignment
+        + ```documents/```: Documents needed for the assignment
+        + ```working_document/```: Working assignment document
+         
+        
+### Example
 
-events/: event (lecture, tutorial, “office hours”, etc.) resources
+Below is an example of ESM 214:Bio Waste Water Treatment file directory.
 
-yyyy-mm-dd/: resources for date yyyy-mm-dd
-
-ESM263_yyyy-mm-dd_Zoom_content: Zoom content, where content is:
-
-chat.txt: chat transcript
-README.md: misc. notes
-video.mp4 or video.mov: video recording
-mirror/: copies of large software and/or data packages that might take too long to download from “official” servers.
-Windows/: Windows software
-macOS/: Mac software
+* ```fall_2020/```
+  + *esm_214*/
+    + ```readings/```
+      +  *2017-01-19_liang-nat-microbiology.pdf*
+    + ```labs/```
+      + *lab-1*/
+        +  *2020-10-15_lab-1.docx*
+        + ```data/```
+          +  *2020-10-15_lab-1_bacteria-counts.csv*
+          +  *2020-10-15_lab-1_bacteria-counts.rmd*
+          +  *2020-10-15_lab-1_bacteria-counts.rproj*
+    + ```assignments/```
+      + *assignment-1*/
+        + ```data/```
+        + ```documents/```
+          +  *2020-10-20_assignment-1_instructions.docx*
+        + ```sources/```
+          +  *2017-01-19_liang-nat-microbiology.pdf*
+        + ```working_document/```
+          +  *2020-10-20_assignment-1.docx*
